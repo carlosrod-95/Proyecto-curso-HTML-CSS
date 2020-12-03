@@ -1,0 +1,470 @@
+/*Empieza RESET CSS-------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Fin */
+
+*{
+    box-sizing: border-box;
+}
+    
+img{
+    max-width: 100%;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 7%;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1{
+    font-size: 44px;
+    line-height: 1.3;
+    margin-bottom: 7%;
+}
+
+h2{
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.beige{
+    color: #ded6c0;
+}
+
+.cajatexto1{
+    width: 90%;
+    min-height: 100px;
+    color: #f5f0ed;
+}
+
+@media screen and (min-width: 570px){
+    .cajatexto1{
+        max-width: 515px;
+    }
+}
+
+/* Header */
+
+.primero{
+    width: 100%;
+    min-height: 625px;
+    background-image: url(images/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.logo{
+    float: left;
+    margin: 25px 0 0 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+div.lanzador{
+    width: 55px;
+    height: 63px;
+    background-color: #d03b40;
+    padding: 3px 6px 8px 6px;
+    margin: 25px 15px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+hr.lanzador{
+    width: 100%;
+    height: 8px;
+    background-color: #ded6c0;
+    border-color: #ded6c0;
+    border-radius: 10px;
+    }
+
+@media screen and (min-width:700px){
+    .lanzador{
+        display: none;
+    }
+}
+
+div.navegacion{
+    width: 100%;
+    min-height: 50px;
+    margin: 25px 15px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0; 
+} 
+
+a.navegacion{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f5f0ed;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    margin: 30px 0 0 30px; 
+}
+
+a.navegacion:hover{
+    border-bottom: 4px dotted;
+    padding-bottom: 4px;
+}
+
+a.navegacion:active{
+    color: #241d1b;
+}
+
+@media screen and (max-width:701px){
+    div.navegacion{
+        display: none;
+    }
+}
+
+hr{
+    width: 25%;
+    height: 4px;
+    background-color: #f5f0ed;
+    border-color: #f5f0ed;
+}
+
+/* Contenido */
+
+.caja1{
+    width: 100%;
+    min-height: 450px;
+}
+
+.caja2{
+    background-color: #d03b40;
+    min-height: 450px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.cajatexto2{
+    width: 90%;
+    min-height: 100px;
+    color: #ded6c0;
+}
+
+.caja3{
+    background-color: #ded6c0;
+    min-height: 450px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.cajatexto3{
+    width: 90%;
+    min-height: 100px;
+    color: #d03b40;
+}
+
+@media screen and (min-width: 1000px){
+    .caja2, .caja3{
+        width: 50%;
+        float: left;
+    }
+}
+
+.caja4{
+    width: 100%;
+    min-height: 500px;
+    background-image: url(images/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.botones{
+    max-width: 300px;
+    min-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    padding: 10px 10px 10px 10px;
+    margin: 20px auto 0 auto;
+    border: 3px solid;
+    color: #f5f0ed;
+}
+
+a.botones{
+    border: none;
+    text-decoration: none;
+    color: #f5f0ed;
+}
+
+a.botones:hover{
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #241d1b;
+    transition: .5s color;
+    color: #d03b40;
+}
+
+.caja5{
+    width: 100%;
+    min-height: 500px;
+    background-color: #f5f0ed;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+}
+
+.pan, .tartas, .dulces, .ingredientes{
+    width: 100%;
+    min-height: 200px;
+    padding: 5% 2% 5% 2%;
+}
+
+.ofertas{
+    width: 115px;
+    height: auto;
+    margin: 2%;
+}
+
+.cajatexto4{
+    width: 90%;
+    min-height: 100px;
+    color: #241d1b;
+    padding-left: 30px;
+}
+
+@media screen and (min-width:1000px){
+    .caja5{
+        text-align: left;
+    }
+    
+    .pan, .tartas, .dulces, .ingredientes{
+        width: 50%;
+        min-height: 300px;
+        float: left;
+        padding: 3% 1% 3% 1%;
+        overflow: hidden;
+    } 
+
+    .imagenoferta{
+        width: 30%;
+        min-height: 50px;
+        float: left;
+        padding-right: 4%;
+    }
+
+    .oferta{
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .cajatexto4{
+        width: 70%;
+        min-height: 50px;
+        color: #241d1b;
+        float: left;
+        overflow: hidden; 
+        padding-left: 0;    
+    }
+}
+
+.caja6{
+    width: 100%;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.caja7{
+    background-color: #ded6c0;
+    min-height: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: flex; 
+}
+
+a.mail{
+    color: #d03b40;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.mail:hover{
+    text-decoration: underline;
+    transition: 0.5s color;
+    color: #241d1b;
+}
+
+a.mail:active{
+    color: #241d1b;
+}
+
+.caja8{
+    background-color: #d03b40;
+    min-height: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+}
+a.maps{
+    color: #ded6c0;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.maps:hover{
+    text-decoration: underline;
+    transition: 0.5s color;
+    color: #241d1b;
+}
+a.maps:active{
+    color: #241d1b;
+}
+@media screen and (min-width:701px){
+    .caja7, .caja8{
+        width: 50%;
+        float: left;
+    }
+}
+
+/* menu --*/
+
+div.menu-desplegado{
+    width: 100%;
+    min-height: 200px;
+    background-color: black;
+    overflow: hidden;
+    padding: 20px 15px;
+}
+a.menu-desplegado{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.5;
+    color: #ded6c0;
+    text-decoration: none;
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:701px){
+    .menu-desplegado{
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px){
+    .js div.menu-desplegado{
+        width: 130px;
+        min-height: 0px;
+        max-height: 0px;
+        background-color: #ded6c0;
+        position: absolute;
+        top: 80px;
+        right: 15px;
+        overflow: hidden;
+        padding: 0px 10px;
+        text-align: left;
+    }
+    .js #menu-desplegado a{
+        padding: 0 0;
+        color: #d03b40;
+        font-size: 17px;
+    }
+    .js #menu-desplegado a:hover{
+        font-weight: 600;
+        transition: 0.5s color;
+        color: #241d1b;
+    }
+    .js #menu-desplegado.menu-desplegadototal{
+        max-height: 220px;
+    }
+}
+
+.caja9{
+    width: 100%;
+    min-height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 0 4% 4%;
+}
